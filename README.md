@@ -3,6 +3,7 @@ About r-wdm-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wdm-feedstock/blob/main/LICENSE.txt)
 
+
 About r-wdm
 -----------
 
@@ -11,6 +12,7 @@ Home: https://github.com/tnagler/wdm-r
 Package license: MIT
 
 Summary: Provides efficient implementations of weighted dependence measures and related asymptotic tests for independence. Implemented measures are the Pearson correlation, Spearman's rho, Kendall's tau, Blomqvist's beta, and Hoeffding's D; see, e.g., Nelsen (2006) <doi:10.1007/0-387-28678-0> and Hollander et al. (2015, ISBN:9780470387375).
+
 About r-wdm
 -----------
 
