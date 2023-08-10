@@ -1,4 +1,4 @@
-{% set version = '0.2.3' %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wdm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wdm/wdm_{{ version }}.tar.gz
-  sha256: 5f0184f6f0f9e9b8c47fb571e4d34dff309644a50afe5f18e42b9c37f52c593b
+  sha256: e2d19c04ea2fb9394cc2b61899c7fd21ae7c6d5825bfdcb74822c7243cd335d3
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,10 +47,8 @@ test:
 about:
   home: https://github.com/tnagler/wdm-r
   license: MIT
-  summary: Provides efficient implementations of weighted dependence measures and related asymptotic
-    tests for independence. Implemented measures are the Pearson correlation, Spearman's
-    rho, Kendall's tau, Blomqvist's beta, and Hoeffding's D; see, e.g., Nelsen (2006)
-    <doi:10.1007/0-387-28678-0> and Hollander et al. (2015, ISBN:9780470387375).
+  summary: Provides efficient implementations of weighted dependence measures and related asymptotic tests for independence. Implemented measures are the Pearson correlation, Spearman's rho, Kendall's tau, Blomqvist's beta, and Hoeffding's D; see, e.g., Nelsen (2006) <doi:10.1007/0-387-28678-0> and Hollander et al. (2015,
+    ISBN:9780470387375).
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
